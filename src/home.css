@@ -1,8 +1,11 @@
-/* Styling for nav */
-.top-nav {
+/* Styling for header */
+.header-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 18px;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 30px;
+  background-image: linear-gradient(to bottom, rgb(22, 21, 21), rgb(32, 30, 30));
 }
 
 /* Styling for home button container */
@@ -13,43 +16,43 @@
 
 /* Styling for home button name */
 #home-button-name {
-  font-family: satoshi;
-  font-size: 30px;
+  color: rgb(222, 222, 222);
+  font-size: 22px;
 }
 
 /* Styling for home button img */
 #home-button-img {
-  width: 43px;
-  height: 43px;
-  margin-right: 15px;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
 }
 
 /* Styling for nav links container */
 .nav-links {
-  display: flex;
+  display: none;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Styling for links */
+/* Styling for nav links */
 .nav-links a{
-  color: white;
-  text-decoration: none;
-  padding: 0px 12px;
+  color: rgb(222, 222, 222);
   font-size: 20px;
+  margin: 0 15px;
 }
 
 .nav-links a:hover {
-  color: rgb(101, 186, 255);
+  color: white;
 }
 
 /* Styling for GitHub link */
 #github-link-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 30px;
-  margin-left: 20px;
+  margin-left: 30px;
   padding: 6px;
   border: 1px solid white;
   border-radius: 30px;
@@ -62,4 +65,91 @@
 
 #github-link-container:hover a{
   color: rgb(22, 21, 21);
+}
+
+#github-link {
+  color: white;
+}
+
+/* Styling for mobile menu container */
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for mobile menu icon */
+#menu {
+  width: 42px;
+  height: 32px;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+/* Styling for mobile dropdown */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 150px;
+  height: 160px;
+  margin-top: 1px;
+  background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
+}
+
+/* Styling for dropdown ul */
+.dropdown ul{
+  padding-left: 25px;
+}
+
+/* Styling for dropdown li*/
+.dropdown ul li{
+  margin-bottom: 13px;
+}
+
+/* Styling for dropdown links */
+.dropdown ul li a{
+  color: rgb(222, 222, 222);
+  font-size: 24px;
+}
+
+.dropdown a:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  /* Styling for header */
+  .header-container {
+    justify-content: space-evenly;
+    height: 120px;
+    padding: 0;
+  }
+
+  /* Enable nav links */
+  .nav-links {
+    display: flex;
+  }
+
+  /* Enable GitHub link */
+  #github-link-container {
+    display: flex;
+  }
+
+  /* Disable menu container */
+  .menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styling for header */
+  .header-container {
+    height: 90px;
+  }
+
+  /* Styling for home button name */
+  #home-button-name {
+    font-size: 26px;
+  }
 }
