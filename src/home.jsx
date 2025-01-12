@@ -41,14 +41,14 @@ function Home() {
       {showDropdown &&       
       <div className='dropdown'>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#top">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Resume</a></li>
         </ul>
       </div>}
 
       {/* About Me */}
-      <div id='about'>
+      <div className='about'>
         <h1>Hey! I'm Nick.</h1>
         <img id='computer-gif' src="/Portfolio-Website/computer.gif" alt="picture of a laptop" />
         <p>
@@ -56,8 +56,8 @@ function Home() {
         </p>
 
         <div className='about-imgs'>
-          <img id='sdsu' src="Portfolio-Website/sdsu-2.jpg" alt="" />
-          <img id='codeninjas' src="/Portfolio-Website/codeninjas-2.png" alt="code ninjas logo" />
+          <img id='sdsu' src="/Portfolio-Website/sdsu.jpg" alt="" />
+          <img id='codeninjas' src="/Portfolio-Website/codeninjas.png" alt="code ninjas logo" />
         </div>
 
         <p>
@@ -65,7 +65,7 @@ function Home() {
         </p>
 
         <div className='about-imgs'>
-          <img id='java' src="Portfolio-Website/java.png" alt="java logo" />
+          <img id='java' src="/Portfolio-Website/java.png" alt="java logo" />
           <img id='python' src="/Portfolio-Website/python.png" alt="python logo" />
         </div>
 
