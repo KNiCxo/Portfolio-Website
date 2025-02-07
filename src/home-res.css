@@ -1,0 +1,148 @@
+@media only screen and (min-width: 800px) {
+  /* Styling for header */
+  .header-container {
+    justify-content: space-evenly;
+    height: 120px;
+    padding: 0;
+  }
+
+  /* Enable nav links */
+  .nav-links {
+    display: flex;
+  }
+
+  /* Enable GitHub link */
+  #github-link-container {
+    display: flex;
+  }
+
+  /* Disable menu container */
+  .menu-container {
+    display: none;
+  }
+
+  /* Styling for About Me */
+  .about {
+    width: 88%;
+  }
+
+  /* Styling for About Me header */
+  .about h1 {
+    margin: 165px 0px 45px;
+    font-size: 66px;
+    text-shadow: 4px 4px black;
+  }
+
+  /* Styling for Computer GIF div */
+  .computer-gif-div {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 40px;
+  }
+
+  /* Styling for Computer GIF */
+  #computer-gif {
+    width: 215px;
+    height: 215px;
+  }
+
+  /* Styling for About Me sections */
+  .a-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0;
+  }
+  
+  .a-section > div {
+    flex: 1;
+    display: flex;
+  }
+
+  /* Styling for About Me paragraphs */
+  .about p {
+    margin: 0 20px;
+  }
+
+  /* Styling for SDSU and Code Ninjas logo */
+  #sdsu, #codeninjas {
+    margin-right: 20px;
+  }
+
+  /* Styling for Java and Python div */
+  .top-images {
+    margin-bottom: 0px;
+  }
+
+  /* Styling for Java logo */
+  #java {
+    width: 52px;
+    height: 100px;
+  }
+
+  /* Styling for Python logo */
+  #python {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Styling for Unity logo */
+  #unity {
+    width: 165px;
+    height: 59px;
+  }
+
+  /* Styling for React logo */
+  #react {
+    width: 70px;
+    height: 63px;
+  }
+
+  /* Styling for NodeJS logo */
+  #nodejs {
+    width: 114px;
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  /* Styling for MySQL logo */
+  #mysql {
+    width: 125px;
+    height: 78px;
+  }
+
+  /* Spacing between logos */
+  #java, #python, #react {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styling for header */
+  .header-container {
+    height: 90px;
+  }
+
+  /* Styling for home button name */
+  #home-button-name {
+    font-size: 26px;
+  }
+
+  /* Styling for About Me header */
+  .about h1 {
+    margin: 125px 0px 45px;
+    font-size: 70px;
+  }
+
+  /* Styling for About Me paragraphs */
+  .about p {
+    font-size: 27px;
+  }
+
+  /* Styling for SDSU and Code Ninjas logo */
+  #sdsu, #codeninjas {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+  }
+}

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
 import './home.css';
+import'./home-res.css';
 
 // Home page
 function Home() {
   const [showDropdown, setShowDropdown] = useState(false);
+
   function displayDropdown() {
     setShowDropdown(prevState => !prevState);
   }
@@ -49,31 +51,65 @@ function Home() {
 
       {/* About Me */}
       <div className='about'>
+        {/* Header and Computer Gif */}
         <h1>Hey! I'm Nick.</h1>
-        <img id='computer-gif' src="/Portfolio-Website/computer.gif" alt="picture of a laptop" />
-        <p>
-          I'm a full-stack developer who graduated from San Diego State University and am currently working in the education sector.
-        </p>
 
-        <div className='about-imgs'>
-          <img id='sdsu' src="/Portfolio-Website/sdsu.jpg" alt="" />
-          <img id='codeninjas' src="/Portfolio-Website/codeninjas.png" alt="code ninjas logo" />
+        <div className='computer-gif-div'>
+          <img id='computer-gif' src="/Portfolio-Website/computer.gif" alt="picture of a laptop" />
         </div>
 
-        <p>
-          I have experience writing in many different languages such as Python, Java, and C# as well as experience in game development.
-        </p>
+        {/* About Me Pt. 1 */}
+        <div className='a-section'>
+          <div>
+            <p>
+              I'm a full-stack developer who graduated from San Diego State University and am currently working in the education sector.
+            </p>
+          </div>
 
-        <div className='about-imgs'>
-          <img id='java' src="/Portfolio-Website/java.png" alt="java logo" />
-          <img id='python' src="/Portfolio-Website/python.png" alt="python logo" />
+          <div className='about-imgs'>
+            <img id='sdsu' src="/Portfolio-Website/sdsu.jpg" alt="" />
+            <img id='codeninjas' src="/Portfolio-Website/codeninjas.png" alt="code ninjas logo" />
+          </div>
         </div>
 
-        <div className='about-imgs'>
-          <img id='unity' src="/Portfolio-Website/unity.png" alt="unity logo" />
+
+        {/* About Me Pt. 2 */}
+        <div className='a-section'>
+          <div>
+            <p>
+              I have experience writing in many different languages such as Java, Python, and C# as well as experience in game development.
+            </p>
+          </div>
+
+          <div>
+            <div className='about-imgs top-images'>
+              <img id='java' src="/Portfolio-Website/java.png" alt="java logo" />
+              <img id='python' src="/Portfolio-Website/python.png" alt="python logo" />
+            </div>
+
+            <div className='about-imgs'>
+              <img id='unity' src="/Portfolio-Website/unity.png" alt="unity logo" />
+            </div>
+          </div>
         </div>
 
-        <p>However, I've always been more naturally drawn more towards web development. </p>
+        {/* About Me Pt. 3 */}
+        <div className='a-section'>
+          <div>
+            <p>However, I've always been more naturally drawn towards web development.</p>
+          </div>
+
+          <div>
+            <div className='about-imgs top-images'>
+              <img id='react' src="/Portfolio-Website/react.png" alt="react logo" />
+              <img id='nodejs' src="/Portfolio-Website/nodejs.svg" alt="nodejs logo" />
+            </div>
+
+            <div className='about-imgs'>
+              <img id='mysql' src="/Portfolio-Website/mysql.png" alt="unity logo" />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
