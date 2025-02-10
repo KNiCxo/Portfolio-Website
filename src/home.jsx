@@ -62,7 +62,7 @@ function Home() {
         <div className='a-section'>
           <div>
             <p>
-              I'm a full-stack developer who graduated from San Diego State University and am currently working in the education sector.
+              I'm a full-stack developer who graduated from San Diego State University and I am currently working in the education sector.
             </p>
           </div>
 
