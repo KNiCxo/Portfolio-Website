@@ -23,9 +23,9 @@ function Home() {
 
         {/* Nav Links */}
         <div className='nav-links'>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Resume</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="">Resume</a>
 
           <div id='github-link-container'>
             <a id='github-link' href="#">GitHub</a>
@@ -111,6 +111,9 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Projects */}
+      <div className='projects'></div>
     </>
   );
 }

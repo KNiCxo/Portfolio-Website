@@ -21,6 +21,14 @@
   /* Enable GitHub link */
   #github-link-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 30px;
   }
 
   /* Disable menu container */
@@ -60,7 +68,7 @@
     align-items: center;
     padding: 25px 0;
   }
-  
+
   /* Allows logo img to display in a row */
   .a-section > div {
     flex: 1;
@@ -70,7 +78,7 @@
   /* Styling for About Me paragraphs */
   .about p {
     margin: 0 20px;
-  }
+  }  
 
   /* Styling for SDSU and Code Ninjas logo */
   #sdsu, #codeninjas {
@@ -156,7 +164,7 @@
   /* Styling for About Me header */
   .about h1 {
     margin: 135px 0px 45px;
-    font-size: 73px;
+    font-size: 68px;
   }
 
   /* Styling for Computer GIF div */
@@ -220,10 +228,15 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   /* Styling for About Me */
   .about {
     width: 62%;
+  }
+
+  /* Styling for About Me header */
+  .about h1 {
+    margin: 150px 0px 45px;
   }
 
   /* Styling for Java logo */
@@ -266,5 +279,61 @@
   /* Spacing between logos */
   #java, #python, #react {
     margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  /* Styling for header */
+  .header-container {
+    height: 120px;
+  }
+
+  /* Styling for home button name */
+  #home-button-name {
+    font-size: 33px;
+  }
+
+  /* Styling for home button img */
+  #home-button-img {
+    width: 53px;
+    height: 53px;
+    margin-right: 20px;
+  }
+
+  /* Styling for nav links */
+  .nav-links a{
+    font-size: 28px;
+  }
+
+  /* Styling for GitHub link */
+  #github-link-container {
+    width: 120px;
+    height: 35px;
+    padding: 8px;
+    margin-left: 50px;
+  }
+
+  /* Styling for About Me */
+  .about {
+    width: 45%;
+  }
+
+  /* Styling for About Me header */
+  .about h1 {
+    margin: 165px 0px 45px;
+    font-size: 73px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  /* Styling for About Me */
+  .about {
+    width: 35%;
+  }
+
+  /* Styling for About Me header */
+  .about h1 {
+    margin: 165px 0px 45px;
+    font-size: 75px;
   }
 }

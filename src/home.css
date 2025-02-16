@@ -51,14 +51,6 @@
 /* Styling for GitHub link */
 #github-link-container {
   display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  margin-left: 30px;
-  padding: 6px;
-  border: 1px solid white;
-  border-radius: 30px;
 }
 
 #github-link-container:hover{
@@ -164,12 +156,18 @@
 
 /* Styling for About Me sections */
 .a-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
   background-color: rgb(27, 26, 26);
   margin-bottom: 20px;
   padding: 20px 0;
   border: 0.25px solid rgb(84, 82, 82);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 /* Styling for About Me paragraphs */
@@ -190,8 +188,8 @@
 
 /* Styling for SDSU and Code Ninjas logo */
 #sdsu, #codeninjas {
-  width: 135px;
-  height: 135px;
+  width: 8.5em;
+  height: 8.5em;
 }
 
 /* Styling for Java and Python div */
