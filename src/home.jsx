@@ -43,14 +43,14 @@ function Home() {
       {showDropdown &&       
       <div className='dropdown'>
         <ul>
-          <li><a href="#top">About</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#">Resume</a></li>
         </ul>
       </div>}
 
       {/* About Me */}
-      <div className='about'>
+      <div id='about'>
         {/* Header and Computer Gif */}
         <h1>Hey! I'm Nick.</h1>
 
@@ -81,15 +81,10 @@ function Home() {
             </p>
           </div>
 
-          <div>
-            <div className='about-imgs top-images'>
-              <img id='java' src="/Portfolio-Website/java.png" alt="java logo" />
-              <img id='python' src="/Portfolio-Website/python.png" alt="python logo" />
-            </div>
-
-            <div className='about-imgs'>
-              <img id='unity' src="/Portfolio-Website/unity.png" alt="unity logo" />
-            </div>
+          <div className='about-imgs'>
+            <img className='prog-img' id="java" src="/Portfolio-Website/java.png" alt="java logo" />
+            <img className='prog-img' id="python" src="/Portfolio-Website/python.png" alt="python logo" />
+            <img className='prog-img' id="unity" src="/Portfolio-Website/unity.png" alt="unity logo" />
           </div>
         </div>
 
@@ -99,21 +94,16 @@ function Home() {
             <p>However, I've always been more naturally drawn towards web development.</p>
           </div>
 
-          <div>
-            <div className='about-imgs top-images'>
-              <img id='react' src="/Portfolio-Website/react.png" alt="react logo" />
-              <img id='nodejs' src="/Portfolio-Website/nodejs.svg" alt="nodejs logo" />
-            </div>
-
-            <div className='about-imgs'>
-              <img id='mysql' src="/Portfolio-Website/mysql.png" alt="unity logo" />
-            </div>
+          <div className='about-imgs'>
+            <img className='prog-img' id='react' src="/Portfolio-Website/react.png" alt="react logo" />
+            <img className='prog-img' id='nodejs' src="/Portfolio-Website/nodejs.svg" alt="nodejs logo" />
+            <img className='prog-img' id='mysql' src="/Portfolio-Website/mysql.png" alt="unity logo" />
           </div>
         </div>
       </div>
 
       {/* Projects */}
-      <div className='projects'></div>
+      <div id='projects'></div>
     </>
   );
 }

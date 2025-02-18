@@ -37,12 +37,12 @@
   }
 
   /* Styling for About Me */
-  .about {
+  #about {
     width: 88%;
   }
 
   /* Styling for About Me header */
-  .about h1 {
+  #about h1 {
     margin: 165px 0px 45px;
     font-size: 66px;
     text-shadow: 4px 4px black;
@@ -63,7 +63,6 @@
 
   /* Styling for About Me sections */
   .a-section {
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 25px 0;
@@ -76,18 +75,18 @@
   }
 
   /* Styling for About Me paragraphs */
-  .about p {
+  #about p {
     margin: 0 20px;
-  }  
+  }
 
   /* Styling for SDSU and Code Ninjas logo */
   #sdsu, #codeninjas {
     margin-right: 20px;
   }
 
-  /* Styling for Java and Python div */
-  .top-images {
-    margin-bottom: 0px;
+  /* Styling for programming language logos */
+  .prog-img {
+    margin: 10px 5px 0;
   }
 
   /* Styling for Java logo */
@@ -100,11 +99,12 @@
   #python {
     width: 80px;
     height: 80px;
+    padding-top: 7px;
   }
 
   /* Styling for Unity logo */
   #unity {
-    width: 165px;
+    width: 169px;
     height: 59px;
   }
 
@@ -116,8 +116,6 @@
 
   /* Styling for NodeJS logo */
   #nodejs {
-    width: 114px;
-    height: 70px;
     margin-right: 10px;
   }
 
@@ -125,11 +123,6 @@
   #mysql {
     width: 125px;
     height: 78px;
-  }
-
-  /* Spacing between logos */
-  #java, #python, #react {
-    margin-right: 20px;
   }
 }
 
@@ -141,7 +134,7 @@
 
   /* Styling for home button name */
   #home-button-name {
-    font-size: 29px;
+    font-size: 27px;
   }
 
   /* Styling for home button img */
@@ -153,16 +146,16 @@
 
   /* Styling for nav links */
   .nav-links a{
-    font-size: 24px;
+    font-size: 22px;
   }
 
   /* Styling for About Me */
-  .about {
+  #about {
     width: 70%;
   }
 
   /* Styling for About Me header */
-  .about h1 {
+  #about h1 {
     margin: 135px 0px 45px;
     font-size: 68px;
   }
@@ -230,12 +223,12 @@
 
 @media only screen and (min-width: 1440px) {
   /* Styling for About Me */
-  .about {
+  #about {
     width: 62%;
   }
 
   /* Styling for About Me header */
-  .about h1 {
+  #about h1 {
     margin: 150px 0px 45px;
   }
 
@@ -300,11 +293,6 @@
     margin-right: 20px;
   }
 
-  /* Styling for nav links */
-  .nav-links a{
-    font-size: 28px;
-  }
-
   /* Styling for GitHub link */
   #github-link-container {
     width: 120px;
@@ -314,26 +302,31 @@
   }
 
   /* Styling for About Me */
-  .about {
-    width: 45%;
+  #about {
+    width: 47%;
   }
 
   /* Styling for About Me header */
-  .about h1 {
+  #about h1 {
     margin: 165px 0px 45px;
     font-size: 73px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
+  /* Styling for nav links */
+  .nav-links a{
+    font-size: 28px;
+  }
+
   /* Styling for About Me */
-  .about {
+  #about {
     width: 35%;
   }
 
   /* Styling for About Me header */
-  .about h1 {
-    margin: 165px 0px 45px;
-    font-size: 75px;
+  #about h1 {
+    margin: 175px 0px 45px;
+    font-size: 77px;
   }
 }
