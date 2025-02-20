@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
 import './home.css';
-import'./home-res.css';
+import'./home-tab-res.css';
+import './home-desk-res.css';
 
 // Home page
 function Home() {
@@ -37,17 +38,17 @@ function Home() {
         <div className='menu-container' onClick={displayDropdown}>
             <img id='menu' src="/Portfolio-Website/menu.png" alt="website logo" />
         </div>
-      </div>
 
-      {/* Mobile Dropdown */}
-      {showDropdown &&       
-      <div className='dropdown'>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </div>}
+        {/* Mobile Dropdown */}
+        {showDropdown &&       
+        <div className='dropdown'>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>}
+      </div>
 
       {/* About Me */}
       <div id='about'>

@@ -6,6 +6,11 @@
     padding: 0;
   }
 
+  /* Styling for home button container */
+  .home-button {
+    padding-left: 0px;
+  }
+
   /* Styling for home button img */
   #home-button-img {
     width: 42px;
@@ -16,6 +21,19 @@
   /* Enable nav links */
   .nav-links {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+    /* Styling for nav links */
+  .nav-links a{
+    color: rgb(222, 222, 222);
+    font-size: 22px;
+    margin: 0 12px;
+  }
+
+  .nav-links a:hover {
+    color: white;
   }
 
   /* Enable GitHub link */
@@ -36,29 +54,34 @@
     display: none;
   }
 
+  /* Disable mobile dropdown */
+  .dropdown {
+    display: none;
+  }
+
   /* Styling for About Me */
   #about {
-    width: 88%;
+    width: 86%;
   }
 
   /* Styling for About Me header */
   #about h1 {
-    margin: 165px 0px 45px;
-    font-size: 66px;
+    margin: 155px 0px 35px;
+    font-size: 60px;
     text-shadow: 4px 4px black;
   }
 
   /* Styling for Computer GIF div */
   .computer-gif-div {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 40px;
   }
 
   /* Styling for Computer GIF */
   #computer-gif {
-    width: 215px;
-    height: 215px;
+    width: 175px;
+    height: 175px;
   }
 
   /* Styling for About Me sections */
@@ -81,48 +104,52 @@
 
   /* Styling for SDSU and Code Ninjas logo */
   #sdsu, #codeninjas {
+    width: 120px;
+    height: 120px;
     margin-right: 20px;
   }
 
   /* Styling for programming language logos */
   .prog-img {
-    margin: 10px 5px 0;
+    margin: 0 9px 0;
   }
 
   /* Styling for Java logo */
   #java {
-    width: 52px;
-    height: 100px;
+    width: 50px;
+    height: 86px;
   }
 
   /* Styling for Python logo */
   #python {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     padding-top: 7px;
   }
 
   /* Styling for Unity logo */
   #unity {
-    width: 169px;
-    height: 59px;
+    width: 155px;
+    height: 55px;
   }
 
   /* Styling for React logo */
   #react {
-    width: 70px;
-    height: 63px;
+    width: 67px;
+    height: 60px;
   }
 
   /* Styling for NodeJS logo */
   #nodejs {
-    margin-right: 10px;
+    width: 98px;
+    height: 60px;
+    margin-right: -5px;
   }
 
   /* Styling for MySQL logo */
   #mysql {
-    width: 125px;
-    height: 78px;
+    width: 121px;
+    height: 70px;
   }
 }
 
@@ -134,7 +161,7 @@
 
   /* Styling for home button name */
   #home-button-name {
-    font-size: 27px;
+    font-size: 29px;
   }
 
   /* Styling for home button img */
@@ -146,31 +173,31 @@
 
   /* Styling for nav links */
   .nav-links a{
-    font-size: 22px;
+    font-size: 25px;
+    margin: 0 16px;
   }
 
   /* Styling for About Me */
   #about {
-    width: 70%;
+    width: 67%;
   }
 
   /* Styling for About Me header */
   #about h1 {
     margin: 135px 0px 45px;
-    font-size: 68px;
   }
 
   /* Styling for Computer GIF div */
   .computer-gif-div {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     margin-bottom: 50px;
   }
 
   /* Styling for Computer GIF */
   #computer-gif {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
   }
 
   /* Styling for About Me sections */
@@ -180,153 +207,38 @@
 
   /* Styling for Java logo */
   #java {
-    width: 62px;
-    height: 110px;
+    width: 55px;
+    height: 95px;
   }
-
+  
   /* Styling for Python logo */
   #python {
     width: 95px;
     height: 95px;
+    padding-top: 7px;
   }
-
+  
   /* Styling for Unity logo */
   #unity {
-    width: 180px;
-    height: 64px;
-  }
-
-  /* Styling for React logo */
-  #react {
-    width: 77px;
-    height: 69px;
-  }
-
-  /* Styling for NodeJS logo */
-  #nodejs {
-    width: 121px;
-    height: 74px;
-    margin-right: 18px;
-  }
-
-  /* Styling for MySQL logo */
-  #mysql {
-    width: 145px;
-    height: 89px;
-  }
-
-  /* Spacing between logos */
-  #java, #python, #react {
-    margin-right: 30px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  /* Styling for About Me */
-  #about {
-    width: 62%;
-  }
-
-  /* Styling for About Me header */
-  #about h1 {
-    margin: 150px 0px 45px;
-  }
-
-  /* Styling for Java logo */
-  #java {
-    width: 67px;
-    height: 115px;
-  }
-
-  /* Styling for Python logo */
-  #python {
-    width: 105px;
-    height: 105px;
-  }
-
-  /* Styling for Unity logo */
-  #unity {
-    width: 190px;
-    height: 67px;
-  }
-
-  /* Styling for React logo */
-  #react {
-    width: 80px;
-    height: 71px;
-  }
-
-  /* Styling for NodeJS logo */
-  #nodejs {
-    width: 129px;
-    height: 78px;
-    margin-right: 13px;
-  }
-
-  /* Styling for MySQL logo */
-  #mysql {
     width: 155px;
-    height: 95px;
+    height: 54px;
   }
-
-  /* Spacing between logos */
-  #java, #python, #react {
-    margin-right: 30px;
+  
+  /* Styling for React logo */
+  #react {
+    width: 72px;
+    height: 65px;
   }
-}
-
-@media only screen and (min-width: 1920px) {
-  /* Styling for header */
-  .header-container {
-    height: 120px;
+  
+  /* Styling for NodeJS logo */
+  #nodejs {
+    width: 105px;
+    height: 65px;
   }
-
-  /* Styling for home button name */
-  #home-button-name {
-    font-size: 33px;
-  }
-
-  /* Styling for home button img */
-  #home-button-img {
-    width: 53px;
-    height: 53px;
-    margin-right: 20px;
-  }
-
-  /* Styling for GitHub link */
-  #github-link-container {
-    width: 120px;
-    height: 35px;
-    padding: 8px;
-    margin-left: 50px;
-  }
-
-  /* Styling for About Me */
-  #about {
-    width: 47%;
-  }
-
-  /* Styling for About Me header */
-  #about h1 {
-    margin: 165px 0px 45px;
-    font-size: 73px;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  /* Styling for nav links */
-  .nav-links a{
-    font-size: 28px;
-  }
-
-  /* Styling for About Me */
-  #about {
-    width: 35%;
-  }
-
-  /* Styling for About Me header */
-  #about h1 {
-    margin: 175px 0px 45px;
-    font-size: 77px;
+  
+  /* Styling for MySQL logo */
+  #mysql {
+    width: 140px;
+    height: 77px;
   }
 }
