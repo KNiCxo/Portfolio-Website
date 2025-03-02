@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import {useState} from 'react';
+import {Link} from 'react-scroll';
+
+import ProjectModal from './ProjectModal.jsx'
 
 import './home.css';
-import'./home-tab-res.css';
-import './home-desk-res.css';
+import'./home-tablet.css';
+import './home-desktop.css';
 
 // Home page
 function Home() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   function displayDropdown() {
     setShowDropdown(prevState => !prevState);
@@ -24,8 +28,8 @@ function Home() {
 
         {/* Nav Links */}
         <div className='nav-links'>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <Link to='about' spy={true} smooth={true} offset={0} duration={800} className='link'>About</Link>
+          <Link to='projects' spy={true} smooth={true} offset={-100} duration={800} className='link'>Projects</Link>
           <a href="">Resume</a>
 
           <div id='github-link-container'>
@@ -43,9 +47,15 @@ function Home() {
         {showDropdown &&       
         <div className='dropdown'>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Resume</a></li>
+            <li>
+              <Link to='about' spy={true} smooth={true} offset={0} duration={800} className='link'>About</Link>
+            </li>
+            <li>
+              <Link to='projects' spy={true} smooth={true} offset={-100} duration={800} className='link'>Projects</Link>
+            </li>
+            <li>
+              <a href="">Resume</a>
+            </li>
           </ul>
         </div>}
       </div>
@@ -60,7 +70,7 @@ function Home() {
         </div>
 
         {/* About Me Pt. 1 */}
-        <div className='a-section'>
+        <div className='portfolio-section'>
           <div>
             <p>
               I'm a full-stack developer who graduated from San Diego State University and I am currently working in the education sector.
@@ -75,7 +85,7 @@ function Home() {
 
 
         {/* About Me Pt. 2 */}
-        <div className='a-section'>
+        <div className='portfolio-section'>
           <div>
             <p>
               I have experience writing in many different languages such as Java, Python, and C# as well as experience in game development.
@@ -90,7 +100,7 @@ function Home() {
         </div>
 
         {/* About Me Pt. 3 */}
-        <div className='a-section'>
+        <div className='portfolio-section'>
           <div>
             <p>However, I've always been more naturally drawn towards web development.</p>
           </div>
@@ -104,7 +114,44 @@ function Home() {
       </div>
 
       {/* Projects */}
-      <div id='projects'></div>
+      <div id='projects'>
+        <h1>Projects</h1>
+        <div className='portfolio-section project-card'>
+          <div className='project-container'>
+            <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
+            <span>Weather App</span>
+            <ul>
+              <li>Simple application that allows users to view everyday weather data.</li>
+              <li>Consists of a "main view" and "list view".</li>
+              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className='portfolio-section project-card'>
+          <div className='project-container'>
+            <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
+            <span>Weather App</span>
+            <ul>
+              <li>Simple application that allows users to view everyday weather data.</li>
+              <li>Consists of a "main view" and "list view".</li>
+              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className='portfolio-section project-card'>
+          <div className='project-container'>
+            <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
+            <span>Weather App</span>
+            <ul>
+              <li>Simple application that allows users to view everyday weather data.</li>
+              <li>Consists of a "main view" and "list view".</li>
+              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

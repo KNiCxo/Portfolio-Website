@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 /* Styling for home button container */
@@ -107,7 +108,7 @@
 
 /* Styling for About Me */
 #about {
-  width: 92%;
+  width: 87%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +118,7 @@
 
 /* Styling for About Me header */
 #about h1 {
-  margin: 145px 0px 45px;
+  margin: 135px 0px 35px;
   font-size: 46px;
   text-shadow: 3px 3px black;
 }
@@ -144,7 +145,7 @@
 }
 
 /* Styling for About Me sections */
-.a-section {
+.portfolio-section {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -152,7 +153,7 @@
   margin-bottom: 20px;
   padding: 20px 0;
   border: 0.25px solid rgb(84, 82, 82);
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 }
@@ -219,4 +220,72 @@
 #mysql {
   width: 140px;
   height: 77px;
+}
+
+/* Styling for Projects container */
+#projects {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Styling for individual project content */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto 10px;
+}
+
+/* Styling for Projects header */
+#projects h1 {
+  margin: 20px 0px 35px;
+  font-size: 46px;
+  text-shadow: 3px 3px black;
+}
+
+/* Styling for project cards */
+.project-card {
+  margin-bottom: 40px;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2%) scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -5px 15px, rgba(0, 0, 0, 0.3) 0px 5px 15px, rgb(0, 0, 0, 0.3) 5px 0px 15px, rgb(0, 0, 0, 0.3) -5px 0px 15px;
+  cursor: pointer;
+}
+
+/* Styling for project card imgs */
+.project-img {
+  width: 100%;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+/* Styling for project card headers */
+#projects span {
+  text-align: left;
+  width: 100%;
+  font-size: 27px;
+}
+
+/* Styling for project card bullet points */
+#projects ul {
+  list-style-type: disc;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+/* Styling project card text */
+#projects li {
+  font-family: satoshi-regular;
+  font-size: 18px;
+  color: rgb(216, 215, 215);
+  margin-top: 12px;
 }
