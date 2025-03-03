@@ -9,11 +9,25 @@ import './home-desktop.css';
 
 // Home page
 function Home() {
+  // State variables for showing/hiding elements
   const [showDropdown, setShowDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
+  // Displays or hides dropdown menu
   function displayDropdown() {
     setShowDropdown(prevState => !prevState);
+  }
+
+  // Displays project modal
+  function displayModal() {
+    document.body.style.overflow = 'hidden';
+    setShowModal(true);
+  }
+
+  // Hides project modal
+  function hideModal() {
+    document.body.style.overflow = 'auto';
+    setShowModal(false);
   }
 
   return (
@@ -61,9 +75,10 @@ function Home() {
       </div>
 
       {/* About Me */}
+      <h1 className='about-header'>Hey! I'm Nick.</h1>
+
       <div id='about'>
         {/* Header and Computer Gif */}
-        <h1>Hey! I'm Nick.</h1>
 
         <div className='computer-gif-div'>
           <img id='computer-gif' src="/Portfolio-Website/computer.gif" alt="picture of a laptop" />
@@ -116,42 +131,35 @@ function Home() {
       {/* Projects */}
       <div id='projects'>
         <h1>Projects</h1>
-        <div className='portfolio-section project-card'>
+        <div className='portfolio-section project-card' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
             <span>Weather App</span>
-            <ul>
-              <li>Simple application that allows users to view everyday weather data.</li>
-              <li>Consists of a "main view" and "list view".</li>
-              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
-            </ul>
+            <p>Simple application that allows users to view everyday weather data for any city in the world.</p>
+            <button className='expand-button'>Click to Expand</button>
           </div>
         </div>
 
-        <div className='portfolio-section project-card'>
+        <div className='portfolio-section project-card' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
             <span>Weather App</span>
-            <ul>
-              <li>Simple application that allows users to view everyday weather data.</li>
-              <li>Consists of a "main view" and "list view".</li>
-              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
-            </ul>
+            <p>Simple application that allows users to view everyday weather data for any city in the world.</p>
+            <button className='expand-button'>Click to Expand</button>
           </div>
         </div>
 
-        <div className='portfolio-section project-card'>
+        <div className='portfolio-section project-card' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app.png" alt="picture of weather app" />
             <span>Weather App</span>
-            <ul>
-              <li>Simple application that allows users to view everyday weather data.</li>
-              <li>Consists of a "main view" and "list view".</li>
-              <li>Built with React and uses the One Call 3.0 API from OpenWeather</li>
-            </ul>
+            <p>Simple application that allows users to view everyday weather data for any city in the world.</p>
+            <button className='expand-button'>Click to Expand</button>
           </div>
         </div>
       </div>
+
+      <ProjectModal open={showModal} onClose={hideModal}></ProjectModal>
     </>
   );
 }
