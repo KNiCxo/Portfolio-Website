@@ -1,0 +1,228 @@
+/* Styling for header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-image: linear-gradient(to bottom, rgb(22, 21, 21), rgb(32, 30, 30));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Styling for home button container */
+.home-button {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/* Styling for home button name */
+#home-button-name {
+  color: rgb(222, 222, 222);
+  font-size: 25px;
+}
+
+/* Styling for home button img */
+#home-button-img {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+/* Styling for nav links container */
+.nav-links {
+  display: none;
+}
+
+/* Styling for GitHub link */
+#github-link-container {
+  display: none;
+}
+
+#github-link-container:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+#github-link-container:hover a{
+  color: rgb(22, 21, 21);
+}
+
+#github-link {
+  color: white;
+}
+
+/* Styling for mobile menu container */
+.menu-container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+/* Styling for mobile menu icon */
+#menu {
+  width: 42px;
+  height: 32px;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+/* Styling for mobile dropdown */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 90px;
+  right: 0;
+  z-index: 1;
+  float: right;
+  width: 150px;
+  height: 160px;
+  background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
+}
+
+/* Styling for dropdown ul */
+.dropdown ul{
+  padding-left: 25px;
+}
+
+/* Styling for dropdown li*/
+.dropdown ul li{
+  margin-bottom: 13px;
+}
+
+/* Styling for dropdown links */
+.dropdown ul li a{
+  color: rgb(222, 222, 222);
+  font-size: 24px;
+}
+
+.dropdown a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+    /* Styling for header */
+    .header-container {
+      justify-content: space-evenly;
+      height: 120px;
+      padding: 0;
+    }
+  
+    /* Styling for home button container */
+    .home-button {
+      padding-left: 0px;
+    }
+  
+    /* Styling for home button img */
+    #home-button-img {
+      width: 42px;
+      height: 42px;
+      margin-right: 15px;
+    }
+  
+    /* Enable nav links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+      /* Styling for nav links */
+    .nav-links a{
+      color: rgb(222, 222, 222);
+      font-size: 22px;
+      margin: 0 12px;
+    }
+  
+    .nav-links a:hover {
+      color: white;
+    }
+  
+    /* Enable GitHub link */
+    #github-link-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      margin-left: 30px;
+      padding: 6px;
+      border: 1px solid white;
+      border-radius: 30px;
+    }
+  
+    /* Disable menu container */
+    .menu-container {
+      display: none;
+    }
+  
+    /* Disable mobile dropdown */
+    .dropdown {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Styling for header */
+    .header-container {
+      height: 100px;
+    }
+  
+    /* Styling for home button name */
+    #home-button-name {
+      font-size: 29px;
+    }
+  
+    /* Styling for home button img */
+    #home-button-img {
+      width: 48px;
+      height: 48px;
+      margin-right: 20px;
+    }
+  
+    /* Styling for nav links */
+    .nav-links a{
+      font-size: 25px;
+      margin: 0 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+  /* Styling for header */
+  .header-container {
+    height: 120px;
+  }
+
+  /* Styling for home button name */
+  #home-button-name {
+    font-size: 33px;
+  }
+
+  /* Styling for home button img */
+  #home-button-img {
+    width: 53px;
+    height: 53px;
+    margin-right: 20px;
+  }
+
+  /* Styling for GitHub link */
+  #github-link-container {
+    width: 120px;
+    height: 35px;
+    padding: 8px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  /* Styling for nav links */
+  .nav-links a{
+    font-size: 28px;
+  }
+}

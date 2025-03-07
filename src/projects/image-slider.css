@@ -1,0 +1,43 @@
+/* Styling for image slider container */
+.slider-container {
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  overflow: hidden;
+}
+
+/* Styling for gallery container */
+.gallery-container {
+  width: 400%;
+  display: flex;
+}
+
+/* Styling for project imgs */
+.modal-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: translate 300ms ease-in-out
+}
+
+/* Styling for arrow buttons */
+.arrow-button {
+  width: 33px;
+  height: 33px;
+  display: block;
+  position: absolute;
+  top: 43%;
+  bottom: 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Display when hovered */
+.slider-container:hover .arrow-button {
+  opacity: 1;
+}
+
+/* Styling for right arrow */
+.right-arrow {
+  transform: scale(-1);
+}

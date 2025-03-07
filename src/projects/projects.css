@@ -1,0 +1,78 @@
+/* Styling for Projects container */
+#projects {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Styling for individual project content */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* Styling for Projects header */
+#projects h1 {
+  margin: 20px 0px 30px;
+  font-size: 46px;
+  text-shadow: 3px 3px black;
+}
+
+/* Styling for project cards */
+.project-card {
+  margin-bottom: 40px;
+  transition: transform 350ms ease, box-shadow 350ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2%) scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px -5px 15px, rgba(0, 0, 0, 0.3) 0px 5px 15px, rgb(0, 0, 0, 0.3) 5px 0px 15px, rgb(0, 0, 0, 0.3) -5px 0px 15px;
+  cursor: pointer;
+}
+
+/* Styling for project card imgs */
+.project-img {
+  width: 100%;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+/* Styling for project card headers */
+#projects span {
+  text-align: left;
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+/* Styling project card text */
+#projects p {
+  font-family: satoshi-regular;
+  font-size: 18px;
+  color: rgb(216, 215, 215);
+  margin: 5px 0 20px;
+}
+
+/* Styling for expand button */
+.expand-button {
+  width: 250px;
+  height: 48px;
+  font-family: satoshi-black;
+  font-size: 20px;
+  color: rgb(45, 44, 44);
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.expand-button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 233, 233);
+}
