@@ -21,8 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 235px;
-  height: 235px;
+  width: 220px;
+  height: 220px;
   background-color: rgb(27, 26, 26);
   margin-bottom: 40px;
   border: 0.25px solid rgb(84, 82, 82);
@@ -32,8 +32,8 @@
 
 /* Styling for Computer GIF */
 #computer-gif {
-  width: 210px;
-  height: 210px;
+  width: 195px;
+  height: 195px;
   border-radius: 5px;
 }
 

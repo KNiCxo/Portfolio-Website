@@ -19,8 +19,8 @@
   right: 0px;
   z-index: 1;
   float: right;
-  width: 200px;
-  height: 345px;
+  width: 210px;
+  height: 365px;
   background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
   border: 0.25px solid rgb(84, 82, 82);
   border-bottom-left-radius: 10px;
@@ -44,20 +44,20 @@
 /* Styling for dropdown ul li */
 .dropdown ul li {
   color: rgb(222, 222, 222);
-  font-size: 25px;
+  font-size: 27px;
   margin-bottom: 18px;
 }
 
 /* Styling for dropdown projects list */
 .dropdown ul li ul {
-  padding: 8px 10px 0 6px;
+  padding: 8px 10px 0 8px;
   font-family: satoshi-regular;
   color: rgb(216, 215, 215);
 }
 
 /* Styling for project list links */
 .dropdown ul li ul li {
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 12px;
 }
 
