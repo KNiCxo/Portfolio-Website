@@ -22,7 +22,7 @@ function ImageSlider(props) {
   // Tracks position in image array
   const [imgIndex, setImgIndex] = useState(0);
 
-
+  // Reference to video player
   const videoRef = useRef(null);
 
   // Displays next image in array

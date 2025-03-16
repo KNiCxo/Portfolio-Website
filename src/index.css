@@ -19,14 +19,18 @@ body {
   font-family: satoshi-black;
 }
 
+/* Styling for all ul elements */
 ul {
   list-style-type: none;
 }
 
+/* Styling for all a elements */
  a {
   text-decoration: none;
  }
 
+ /* Styling for all link elements */
  .link:hover {
   cursor: pointer;
+  color: white;
  }

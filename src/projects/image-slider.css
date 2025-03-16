@@ -28,11 +28,7 @@
   height: 100%;
   flex-shrink: 0;
   object-fit: contain;
-  transition: translate 300ms ease-in-out
-}
-
-.modal-video:fullscreen {
-  translate: 0%;
+  transition: translate 300ms ease-in-out;
 }
 
 /* Styling for arrow buttons */

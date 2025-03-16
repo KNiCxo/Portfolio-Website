@@ -4,8 +4,6 @@ import Header from './header/Header.jsx';
 import AboutMe from './about-me/AboutMe.jsx';
 import Projects from './projects/Projects.jsx';
 
-import './home.css';
-
 // Home page
 function Home() {
   // State variable for showing/hiding elements

@@ -8,16 +8,10 @@ function Projects() {
   // State variable for showing/hiding elements
   const [showModal, setShowModal] = useState(false);
 
-  // Displays project modal
+  // Displays/hides project modal
   function displayModal() {
-    document.body.style.overflow = 'hidden';
-    setShowModal(true);
-  }
-
-  // Hides project modal
-  function hideModal() {
-    document.body.style.overflow = 'auto';
-    setShowModal(false);
+    document.body.style.overflow = document.body.style.overflow  ? 'auto' : 'hidden';
+    setShowModal(prevState => !prevState);
   }
   
   return(
@@ -26,7 +20,7 @@ function Projects() {
       <div id='projects'>
         <h1>Projects</h1>
         
-        <div className='portfolio-section project-card' onClick={displayModal}>
+        <div className='portfolio-section project-card' id='weather' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app/1.png" alt="picture of weather app" />
             <span>Weather App</span>
@@ -35,7 +29,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className='portfolio-section project-card' onClick={displayModal}>
+        <div className='portfolio-section project-card' id='league' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app/1.png" alt="picture of weather app" />
             <span>Weather App</span>
@@ -44,7 +38,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className='portfolio-section project-card' onClick={displayModal}>
+        <div className='portfolio-section project-card' id='contacts' onClick={displayModal}>
           <div className='project-container'>
             <img className='project-img' src="/Portfolio-Website/weather-app/1.png" alt="picture of weather app" />
             <span>Weather App</span>
@@ -54,7 +48,8 @@ function Projects() {
         </div>
       </div>
 
-      <ProjectModal open={showModal} onClose={hideModal}></ProjectModal>
+      {/* Modal Component */}
+      <ProjectModal open={showModal} onClose={displayModal}></ProjectModal>
     </>
   )
 }

@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  border-bottom: 0.25px solid rgb(84, 82, 82);
 }
 
 /* Styling for home button container */
@@ -72,40 +73,6 @@
   cursor: pointer;
 }
 
-/* Styling for mobile dropdown */
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 90px;
-  right: 0;
-  z-index: 1;
-  float: right;
-  width: 150px;
-  height: 160px;
-  background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
-}
-
-/* Styling for dropdown ul */
-.dropdown ul{
-  padding-left: 25px;
-}
-
-/* Styling for dropdown li*/
-.dropdown ul li{
-  margin-bottom: 13px;
-}
-
-/* Styling for dropdown links */
-.dropdown ul li a{
-  color: rgb(222, 222, 222);
-  font-size: 24px;
-}
-
-.dropdown a:hover {
-  color: white;
-}
-
 @media screen and (min-width: 800px) {
     /* Styling for header */
     .header-container {
@@ -159,11 +126,6 @@
   
     /* Disable menu container */
     .menu-container {
-      display: none;
-    }
-  
-    /* Disable mobile dropdown */
-    .dropdown {
       display: none;
     }
 }

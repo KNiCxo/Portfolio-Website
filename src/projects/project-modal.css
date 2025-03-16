@@ -1,12 +1,12 @@
 /* Styling for overlay */
-.overlay {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
+  z-index: 0;
 }
 
 /* Styling for modal container */
@@ -55,9 +55,6 @@
   width: 18px;
   height: 18px;
   padding-right: 5px;
-}
-
-.modal-header img:hover {
   cursor: pointer;
 }
 

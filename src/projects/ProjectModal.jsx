@@ -10,7 +10,7 @@ function ProjectModal(props) {
   return(
     <>
       {/* Overlay */}
-      <div className='overlay'></div>
+      <div className='modal-overlay'></div>
 
       {/* Modal */}
       <div className='project-modal'>
