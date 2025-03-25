@@ -1,29 +1,29 @@
-/* Styling for overlay */
-.modal-overlay {
+/* Styling for modal container */
+.modal-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 0;
+  z-index: 2000;
+  inset: 0;
 }
 
-/* Styling for modal container */
+/* Styling for overlay */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+}
+
+/* Styling for project modal */
 .project-modal {
-  position: fixed;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  width: 94%;
+  width: 85%;
+  max-width: 480px;
+  top: 5%;
+  position: relative;
   background-color: rgb(27, 26, 26);
-  padding: 15px 0;
-  margin: 0 auto 20px;
   border: 0.25px solid rgb(84, 82, 82);
   border-radius: 10px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 /* Styling for modal content */
@@ -31,11 +31,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 92%;
-  margin: 0 auto;
 }
 
-/* Styling for modal header */
+/* Modal header */
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -71,7 +69,7 @@
   font-family: satoshi-regular;
   font-size: 19px;
   color: rgb(216, 215, 215);
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 /* Styling for source code button */
@@ -90,4 +88,43 @@
 .source-code-button:hover {
   cursor: pointer;
   background-color: rgb(235, 233, 233);
+}
+
+@media only screen and (min-width: 800px) {
+  /* Styling for project modal */
+  .project-modal {
+    width: 60%;
+    top: 4%;
+  }
+
+  /* Styling for modal content */
+  .modal-content {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  /* Styling for modal project title */
+  .modal-header span {
+    font-size: 40px;
+  }
+
+  /* Styling for modal close button */
+  .modal-header img {
+    width: 21px;
+    height: 21px;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styling for project modal */
+  .project-modal {
+    width: 517px;
+  }
+
+  /* Styling for modal text */
+  .modal-content li {
+    margin-bottom: 25px;
+  }
 }

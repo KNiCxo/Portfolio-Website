@@ -39,8 +39,8 @@ function Header() {
 
         {/* Nav Links */}
         <div className='nav-links'>
-          <Link to='about' spy={true} smooth={true} offset={0} duration={800} className='link'>About</Link>
-          <Link to='projects' spy={true} smooth={true} offset={-100} duration={800} className='link'>Projects</Link>
+          <Link to='about' spy={true} smooth={true} offset={-300} duration={800} className='link'>About</Link>
+          <Link to='projects' spy={true} smooth={true} offset={-270} duration={800} className='link'>Projects</Link>
           <a href="">Resume</a>
 
           <div id='github-link-container'>
