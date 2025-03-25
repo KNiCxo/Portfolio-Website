@@ -162,7 +162,7 @@
   }
 
   /* Styling for About Me header */
-  #about h1 {
+  .about-header {
     margin: 165px 0px 45px;
     font-size: 73px;
   }
@@ -171,18 +171,14 @@
 @media only screen and (min-width: 2560px) {
   /* Styling for About Me */
   #about {
-    width: 39%;
+    width: 32%;
+    max-width: 800px;
   }
 
   /* Styling for About Me header */
-  #about h1 {
+  .about-header {
     margin: 175px 0px 45px;
     font-size: 79px;
-  }
-
-  /* Styling for About Me paragraphs */
-  #about p {
-    font-size: 23px;
   }
 
   /* Styling for Computer GIF div */
@@ -198,42 +194,35 @@
     height: 230px;
   }
 
-  /* Styling for SDSU and Code Ninjas logo */
-  #sdsu, #codeninjas {
-    width: 135px;
-    height: 135px;
-    margin-right: 20px;
-  }
-
   /* Styling for Java logo */
   #java {
-    width: 69px;
-    height: 119px;
+    width: 64px;
+    height: 110px;
   }
   
   /* Styling for Python logo */
   #python {
-    width: 112px;
-    height: 112px;
+    width: 105px;
+    height: 105px;
     padding-top: 7px;
   }
   
   /* Styling for Unity logo */
   #unity {
-    width: 183px;
-    height: 66px;
+    width: 170px;
+    height: 61px;
   }
   
   /* Styling for React logo */
   #react {
-    width: 88px;
-    height: 79px;
+    width: 82px;
+    height: 73px;
   }
   
   /* Styling for NodeJS logo */
   #nodejs {
-    width: 124px;
-    height: 75px;
+    width: 119px;
+    height: 72px;
   }
   
   /* Styling for MySQL logo */

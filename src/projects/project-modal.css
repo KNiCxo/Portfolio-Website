@@ -16,7 +16,7 @@
 /* Styling for project modal */
 .project-modal {
   width: 85%;
-  max-width: 480px;
+  max-width: 486px;
   top: 5%;
   position: relative;
   background-color: rgb(27, 26, 26);
@@ -82,7 +82,7 @@
   background-color: white;
   border-radius: 10px;
   border: none;
-  margin: 10px 0 10px;
+  margin: 10px 0;
 }
 
 .source-code-button:hover {
@@ -118,13 +118,38 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  /* Styling for modal text */
+  .modal-content li {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+   /* Styling for project modal */
+  .project-modal {
+    top: 13%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
   /* Styling for project modal */
   .project-modal {
-    width: 517px;
+    width: 24%;
+    top: 16%;
+    max-width: 1000px;
   }
 
   /* Styling for modal text */
   .modal-content li {
-    margin-bottom: 25px;
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  /* Styling for source code button */
+  .source-code-button {
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    margin: 10px 0 25px;
   }
 }
