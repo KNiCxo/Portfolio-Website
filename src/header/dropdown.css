@@ -10,10 +10,9 @@
   width: 210px;
   height: 390px;
   background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
-  border: 0.25px solid rgb(84, 82, 82);
+  border: 1px solid rgb(84, 82, 82);
   border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border: 0.25px solid rgb(84, 82, 82);
+  border-top-left-radius: 10px;;
   transition: transform 200ms linear;
 }
 
