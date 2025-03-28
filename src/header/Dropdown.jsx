@@ -6,21 +6,24 @@ function Dropdown(props) {
     <>
       {/* Mobile Dropdown */}     
       <div className='dropdown' style={{ transform: props.open ? 'translateX(0%)' : 'translateX(100%)' }}>
-        <img onClick={props.onClose} src="/Portfolio-Website/close.png" alt="" />
+        <img onClick={props.onClose} src="close.png" alt="" />
         <ul>
           <li>
             <Link to='about' spy={true} smooth={true} offset={-250} duration={800} className='link' onClick={props.onClose}>About</Link>
           </li>
           <li>
-            <Link to='projects' spy={true} smooth={true} offset={-100} duration={800} className='link' onClick={props.onClose}>Projects</Link>
+            <Link to='projects' spy={true} smooth={true} offset={-200} duration={800} className='link' onClick={props.onClose}>Projects</Link>
             <ul>
               <li><Link to='weather' spy={true} smooth={true} offset={-100} duration={800} className='link' onClick={props.onClose}>Weather Forecast</Link></li>
-              <li><Link to='league' spy={true} smooth={true} offset={-100} duration={800} className='link' onClick={props.onClose}>League of Legends Match History</Link></li>
+              <li><Link to='league' spy={true} smooth={true} offset={-100} duration={800} className='link' onClick={props.onClose}>LoL Match History</Link></li>
               <li><Link to='contacts' spy={true} smooth={true} offset={-100} duration={800} className='link' onClick={props.onClose}>Contacts</Link></li>
             </ul>
           </li>
           <li>
-            <Link to='/' className='link'>Resume</Link>
+            <a href="https://drive.google.com/file/d/1_KZFu8nWya3itDhQdW9YBwtW5AitGuQM/view?usp=drive_link" target='_blank' className='link resume-link'>Resume</a>
+          </li>
+          <li>
+            <a href="https://github.com/KNiCxo" target='_blank' className='link resume-link'>GitHub</a>
           </li>
         </ul>
       </div>

@@ -12,7 +12,7 @@ function AboutMe() {
         {/* Header and Computer Gif */}
 
         <div className='computer-gif-div'>
-          <img id='computer-gif' src="/Portfolio-Website/about-me/computer.gif" alt="picture of a laptop" />
+          <img id='computer-gif' src="about-me/computer.gif" alt="picture of a laptop" />
         </div>
 
         {/* About Me Pt. 1 */}
@@ -24,8 +24,8 @@ function AboutMe() {
           </div>
 
           <div className='about-imgs'>
-            <img id='sdsu' src="/Portfolio-Website/about-me/sdsu.jpg" alt="" />
-            <img id='codeninjas' src="/Portfolio-Website/about-me/codeninjas.png" alt="code ninjas logo" />
+            <img id='sdsu' src="about-me/sdsu.jpg" alt="" />
+            <img id='codeninjas' src="about-me/codeninjas.png" alt="code ninjas logo" />
           </div>
         </div>
 
@@ -39,9 +39,9 @@ function AboutMe() {
           </div>
 
           <div className='about-imgs'>
-            <img className='prog-img' id="java" src="/Portfolio-Website/about-me/java.png" alt="java logo" />
-            <img className='prog-img' id="python" src="/Portfolio-Website/about-me/python.png" alt="python logo" />
-            <img className='prog-img' id="unity" src="/Portfolio-Website/about-me/unity.png" alt="unity logo" />
+            <img className='prog-img' id="java" src="about-me/java.png" alt="java logo" />
+            <img className='prog-img' id="python" src="about-me/python.png" alt="python logo" />
+            <img className='prog-img' id="unity" src="about-me/unity.png" alt="unity logo" />
           </div>
         </div>
 
@@ -52,9 +52,9 @@ function AboutMe() {
           </div>
 
           <div className='about-imgs'>
-            <img className='prog-img' id='react' src="/Portfolio-Website/about-me/react.png" alt="react logo" />
-            <img className='prog-img' id='nodejs' src="/Portfolio-Website/about-me/nodejs.svg" alt="nodejs logo" />
-            <img className='prog-img' id='mysql' src="/Portfolio-Website/about-me/mysql.png" alt="unity logo" />
+            <img className='prog-img' id='react' src="about-me/react.png" alt="react logo" />
+            <img className='prog-img' id='nodejs' src="about-me/nodejs.svg" alt="nodejs logo" />
+            <img className='prog-img' id='mysql' src="about-me/mysql.png" alt="unity logo" />
           </div>
         </div>
       </div>

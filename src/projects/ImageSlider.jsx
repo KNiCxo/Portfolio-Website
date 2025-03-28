@@ -6,17 +6,31 @@ import './image-slider.css';
 function ImageSlider(props) {
   // Object array for all project images
   const projectImages = {
-    project1: [
-      '/Portfolio-Website/weather-app/1.png', 
-      '/Portfolio-Website/weather-app/2.png', 
-      '/Portfolio-Website/weather-app/3.png',
-      '/Portfolio-Website/weather-app/4.png'
+    project1:[
+      '/weather-app/1.png', 
+      '/weather-app/2.png', 
+      '/weather-app/3.png',
+      '/weather-app/4.png'
+    ],
+    project2:[
+      '/lol-app/1.png',
+      '/lol-app/2.png',
+      '/lol-app/3.png',
+      '/lol-app/4.png'
+    ],
+    project3:[
+      '/contacts-app/1.png',
+      '/contacts-app/2.png',
+      '/contacts-app/3.png',
+      '/contacts-app/4.png'
     ]
   };
 
   // Array for all project videos
   const projectVideos = [
-    '/Portfolio-Website/weather-app/project1.mp4'
+    '/weather-app/project1.mp4',
+    '/lol-app/project2.mp4',
+    '/contacts-app/project3.mp4',
   ];
 
   // Tracks position in image array
@@ -81,15 +95,15 @@ function ImageSlider(props) {
         {/* Gallery Images */}
         <div className='gallery-container'>
           {projectImages[Object.keys(projectImages)[props.project]].map(url => {
-            return <img key={url} src={url} className='modal-img' style={{translate: `${-100 * imgIndex}%`}}/>
+            return <img key={url} src={url} className='modal-img' style={{translate: `${-100.01 * imgIndex}%`}}/>
           })}
           <video controls className='modal-video' ref={videoRef} src={projectVideos[props.project]} style={{translate: `${-100 * imgIndex}%`}}
           ></video>
         </div>
 
         {/* Arrow Buttons */}
-        <img onClick={showPrevImg} className='arrow-button' src="/Portfolio-Website/arrow.png" alt="" style={{left: 10}}/>
-        <img onClick={showNextImg} className='arrow-button right-arrow' src="/Portfolio-Website/arrow.png" alt="" style={{right: 10}}/>
+        <img onClick={showPrevImg} className='arrow-button' src="arrow.png" alt="" style={{left: 10}}/>
+        <img onClick={showNextImg} className='arrow-button right-arrow' src="arrow.png" alt="" style={{right: 10}}/>
       </div>
     </>
   );

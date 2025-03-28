@@ -8,11 +8,12 @@
   z-index: 1;
   float: right;
   width: 210px;
-  height: 365px;
+  height: 390px;
   background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
   border: 0.25px solid rgb(84, 82, 82);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  border: 0.25px solid rgb(84, 82, 82);
   transition: transform 200ms linear;
 }
 
@@ -30,7 +31,7 @@
 }
 
 /* Styling for dropdown ul li */
-.dropdown ul li {
+.dropdown ul li, .resume-link {
   color: rgb(222, 222, 222);
   font-size: 27px;
   margin-bottom: 18px;

@@ -105,7 +105,7 @@
 
   /* Styling for modal project title */
   .modal-header span {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   /* Styling for modal close button */
@@ -137,6 +137,11 @@
     width: 24%;
     top: 16%;
     max-width: 1000px;
+  }
+
+   /* Styling for modal project title */
+   .modal-header span {
+    font-size: 40px;
   }
 
   /* Styling for modal text */
