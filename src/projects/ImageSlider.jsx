@@ -39,6 +39,10 @@ function ImageSlider(props) {
   // Reference to video player
   const videoRef = useRef(null);
 
+  // Reference to left and right arrow
+  const leftArrow = useRef(null);
+  const rightArrow = useRef(null);
+
   // Displays next image in array
   function showNextImg() {
     const arrayLength = projectImages[Object.keys(projectImages)[props.project]].length;
@@ -47,15 +51,29 @@ function ImageSlider(props) {
     if (imgIndex < arrayLength) {
       setImgIndex(s => s + 1);
     }
+
+    // Show left arrow if not on the first image
+    // or hide right arrow if at the end of gallery
+    if (imgIndex == 0) {
+      leftArrow.current.style.display = 'block';
+    } else if (imgIndex == 3) {
+      rightArrow.current.style.display = 'none';
+    }
   }
 
   // Displays previous image in array
   function showPrevImg() {
-    const arrayLength = projectImages[Object.keys(projectImages)[props.project]].length;
-
     // If within bounds, go to previous image
     if (imgIndex > 0) {
       setImgIndex(s => s - 1);
+    }
+
+    // Hide left arrow if at the first image
+    // or show right arrow if not at end of gallery
+    if (imgIndex == 1) {
+      leftArrow.current.style.display = 'none';
+    } else if (imgIndex == 4) {
+      rightArrow.current.style.display = 'block';
     }
 
     if (videoRef.current.style.transition == 'none') {
@@ -102,8 +120,8 @@ function ImageSlider(props) {
         </div>
 
         {/* Arrow Buttons */}
-        <img onClick={showPrevImg} className='arrow-button' src="arrow.png" alt="" style={{left: 10}}/>
-        <img onClick={showNextImg} className='arrow-button right-arrow' src="arrow.png" alt="" style={{right: 10}}/>
+        <img onClick={showPrevImg} className='arrow-button' ref={leftArrow} src="arrow.png" alt="" style={{left: 10, display: 'none'}}/>
+        <img onClick={showNextImg} className='arrow-button right-arrow' ref={rightArrow} src="arrow.png" alt="" style={{right: 10}}/>
       </div>
     </>
   );

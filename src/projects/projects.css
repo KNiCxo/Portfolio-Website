@@ -1,6 +1,7 @@
 /* Styling for Projects container */
 #projects {
   width: 85%;
+  max-width: 382px;
   display: flex;
   flex-direction: column;
   justify-content: center;
