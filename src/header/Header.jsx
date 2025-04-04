@@ -41,7 +41,7 @@ function Header() {
         <div className='nav-links'>
           <Link to='about' spy={true} smooth={true} offset={-330} duration={800} className='link'>About</Link>
           <Link to='projects' spy={true} smooth={true} offset={-270} duration={800} className='link'>Projects</Link>
-          <a href="https://drive.google.com/file/d/1-M0glsqyV2jgxC6ua5R4W8nHw2IFiZ7A/view?usp=drive_link" target='_blank'>Resume</a>
+          <a href="https://drive.google.com/file/d/1pIK3l_6NjXdOZlF0f5OgotFn5olBzfwc/view?usp=sharing" target='_blank'>Resume</a>
 
           <div id='github-link-container'>
             <a id='github-link' href="https://github.com/KNiCxo" target='_blank'>GitHub</a>

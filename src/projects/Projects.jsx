@@ -34,7 +34,7 @@ function Projects() {
           <div className='project-container'>
             <img className='project-img' src="weather-app/1.png" alt="picture of weather app" />
             <span>Weather Forecast</span>
-            <p>Web page that allows users to view everyday weather data for any city in the world.</p>
+            <p>Application that allows users to view everyday weather data for any city in the world.</p>
             <button className='expand-button'>Click to Expand</button>
           </div>
         </div>

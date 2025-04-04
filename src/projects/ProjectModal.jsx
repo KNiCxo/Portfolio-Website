@@ -76,7 +76,7 @@ function ProjectModal(props) {
               {displayUL(props.project)}
 
               {/* Souce Code Button */}
-              <a href={repositoryLinks[props.project]}>
+              <a href={repositoryLinks[props.project]} target='_blank'>
                 <button className='source-code-button'>View Source Code</button>
               </a>
             </div>

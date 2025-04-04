@@ -19,7 +19,7 @@ function AboutMe() {
         <div className='portfolio-section'>
           <div>
             <p>
-              I'm a full-stack developer who graduated from San Diego State University and I am currently working in the education sector.
+              I'm a Full-Stack developer and graduate from SDSU with a Bachelor's in Computer Science. Currently, I am working in the education sector while I continue to perfect my skills as a developer.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ function AboutMe() {
         <div className='portfolio-section'>
           <div>
             <p>
-              I have experience writing in many different languages such as Java, Python, and C# as well as experience in game development.
+              Over the years, I have worked on a diverse range of projects and have gained experience with various technologies such as C#, Python, Java, Linux, and Unity.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ function AboutMe() {
         {/* About Me Pt. 3 */}
         <div className='portfolio-section'>
           <div>
-            <p>However, I've always been more naturally drawn towards web development.</p>
+            <p>However, I have always had a particular interest in the field of web development and thus have the most experience creating practical and effective projects in this area.</p>
           </div>
 
           <div className='about-imgs'>

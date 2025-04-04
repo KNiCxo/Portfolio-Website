@@ -20,7 +20,7 @@ function Dropdown(props) {
             </ul>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1-M0glsqyV2jgxC6ua5R4W8nHw2IFiZ7A/view?usp=drive_link" target='_blank' className='link resume-link'>Resume</a>
+            <a href="https://drive.google.com/file/d/1pIK3l_6NjXdOZlF0f5OgotFn5olBzfwc/view?usp=sharing" target='_blank' className='link resume-link'>Resume</a>
           </li>
           <li>
             <a href="https://github.com/KNiCxo" target='_blank' className='link resume-link'>GitHub</a>

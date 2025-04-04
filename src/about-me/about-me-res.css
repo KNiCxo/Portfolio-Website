@@ -1,7 +1,8 @@
 @media only screen and (min-width: 800px) {
   /* Styling for About Me */
   #about {
-    width: 80%;
+    width: 82%;
+    max-width: 709px;
   }
 
   /* Styling for About Me header */
@@ -31,15 +32,13 @@
 
   /* Styling for About Me paragraphs */
   #about p {
-    margin: 0 20px;
-    font-size: 18px;
+    margin: 0 0 0 20px;
   }
 
   /* Styling for SDSU and Code Ninjas logo */
   #sdsu, #codeninjas {
-    width: 110px;
-    height: 110px;
-    margin-right: 20px;
+    width: 115px;
+    height: 115px;
   }
 
   /* Styling for programming language logos */
@@ -89,7 +88,7 @@
 @media only screen and (min-width: 1200px) {
   /* Styling for About Me */
   #about {
-    width: 58%;
+    width: 59%;
     max-width: 735.4px;
   }
 
@@ -155,11 +154,6 @@
 }
 
 @media only screen and (min-width: 1920px) {
-  /* Styling for About Me */
-  #about {
-    width: 43%;
-  }
-
   /* Styling for About Me header */
   .about-header {
     margin: 165px 0px 45px;

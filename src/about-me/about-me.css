@@ -1,6 +1,7 @@
 /* Styling for About Me */
 #about {
-  width: 85%;
+  width: 88%;
+  max-width: 657px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,9 +41,9 @@
 /* Styling for About Me paragraphs */
 #about p {
   margin: 0 15px 20px;
-  text-align: left;
   font-family: satoshi-regular;
-  font-size: 20px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 /* Styling for About Me img containers */
@@ -61,42 +62,42 @@
 
 /* Styling for programming language logos */
 .prog-img {
-  margin: 0 9px 10px;
+  margin: 0 10px 10px;
 }
 
 /* Styling for Java logo */
 #java {
-  width: 55px;
-  height: 95px;
+  width: 49px;
+  height: 85px;
 }
 
 /* Styling for Python logo */
 #python {
-  width: 95px;
-  height: 95px;
+  width: 85px;
+  height: 85px;
   padding-top: 7px;
 }
 
 /* Styling for Unity logo */
 #unity {
   width: 155px;
-  height: 54px;
+  height: 52px;
 }
 
 /* Styling for React logo */
 #react {
-  width: 72px;
-  height: 65px;
+  width: 66px;
+  height: 60px;
 }
 
 /* Styling for NodeJS logo */
 #nodejs {
-  width: 105px;
-  height: 65px;
+  width: 97px;
+  height: 60px;
 }
 
 /* Styling for MySQL logo */
 #mysql {
-  width: 135px;
-  height: 74px;
+  width: 126px;
+  height: 69px;
 }
