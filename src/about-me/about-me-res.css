@@ -3,6 +3,7 @@
   #about {
     width: 82%;
     max-width: 709px;
+    margin-bottom: 60px;
   }
 
   /* Styling for About Me header */
@@ -144,6 +145,7 @@
   /* Styling for About Me */
   #about {
     width: 51%;
+    margin-bottom: 90px;
   }
 
   /* Styling for About Me header */
@@ -175,15 +177,7 @@
 
   /* Styling for Computer GIF div */
   .computer-gif-div {
-    width: 255px;
-    height: 255px;
     margin-bottom: 65px;
-  }
-
-  /* Styling for Computer GIF */
-  #computer-gif {
-    width: 230px;
-    height: 230px;
   }
 
   /* Styling for Java logo */
@@ -219,7 +213,7 @@
   
   /* Styling for MySQL logo */
   #mysql {
-    width: 160px;
-    height: 88px;
+    width: 155px;
+    height: 85px;
   }
 }

@@ -9,7 +9,8 @@
   float: right;
   width: 210px;
   height: 390px;
-  background-image: linear-gradient(to top, rgb(25, 24, 24), rgb(32, 30, 30));
+  background-image: linear-gradient(to top, rgba(25, 24, 24, 0.88), rgba(32, 30, 30, 0.88));
+  backdrop-filter: blur(4px);
   border: 1px solid rgb(84, 82, 82);
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;;

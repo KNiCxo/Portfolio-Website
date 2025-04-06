@@ -1,6 +1,6 @@
 /* Styling for Projects container */
 #projects {
-  width: 88%;
+  width: 90%;
   max-width: 382px;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 91%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@
 /* Styling for expand button */
 .expand-button {
   width: 250px;
-  height: 48px;
+  height: 52px;
   font-family: satoshi-black;
   font-size: 20px;
   color: rgb(45, 44, 44);
@@ -81,11 +81,11 @@
 @media only screen and (min-width: 800px) {
   /* Styling for Projects container */
   #projects {
-    width: 84%;
+    width: 83%;
     max-width: 732px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0px 50px;
+    gap: 0px 40px;
   }
 
   /* Styling for Projects header */
@@ -97,10 +97,9 @@
 
   /* Styling for project cards */
   .project-card {
-    width: 45%;
+    width: 46.5%;
     margin-bottom: 70px;
   }
-
 
   /* Styling for individual project content */
   .project-container {
@@ -141,7 +140,8 @@
   /* Styling for Projects container */
   #projects {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1900px;
+    margin-bottom: 60px;
   }
 
   /* Styling for project cards */
@@ -161,13 +161,13 @@
 @media only screen and (min-width: 1920px) {
   /* Styling for project cards */
   .project-card {
-    width: 26%;
+    width: 30%;
   }
 }
 
 @media only screen and (min-width: 2560px) {
   /* Styling for project cards */
   .project-card {
-    width: 29%;
+    width: 20%;
   }
 }
