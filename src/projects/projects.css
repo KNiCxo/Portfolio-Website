@@ -146,7 +146,7 @@
 
   /* Styling for project cards */
   .project-card {
-    width: 29%;
+    width: 22%;
     transition: transform 350ms ease, box-shadow 350ms ease;
   }
 
@@ -161,7 +161,7 @@
 @media only screen and (min-width: 1920px) {
   /* Styling for project cards */
   .project-card {
-    width: 30%;
+    width: 19%;
   }
 }
 
